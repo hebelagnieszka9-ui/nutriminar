@@ -1,21 +1,40 @@
-# 🍏 NutriMinar
 
-NutriMinar is an application built to analyze the nutritional value of food and help users track their daily diet.
+# 🍏 NutriMinar — AI-Powered Meal Nutrition Analyzer & QA Testing Portfolio
 
-Currently in development, this project serves as both a coding sandbox and a **primary Quality Assurance (QA) testing ground** as I transition into a Software Tester role.
+NutriMinar is an application built to analyze the nutritional value of food from photos using Artificial Intelligence and calculate macronutrients. 
 
-## 🛠 Tech Stack
+This repository serves a dual purpose:
+1. A **coding showcase** built with Node.js, Express, and React Native (Expo).
+2. A **primary Quality Assurance (QA) Testing Portfolio** demonstrating manual API testing, test scenario design, boundary value analysis, and structured defect reporting.
+
+---
+
+## 🛠 Tech Stack & Architecture
+
 * **Frontend:** React Native / Expo (TypeScript)
-* **Backend:** Node.js / Express
-* **AI Integration (In Progress):** OpenAI API
+* **Backend:** Node.js / Express API (`POST /api/analyze-meal`)
+* **AI Engine:** OpenAI GPT-4 Vision API Integration
+* **Data Validation:** Zod Schema Validation
 
-## 🎯 QA & Testing Focus
-As a QA Tester, I am actively treating my own application as a product to be tested. In the near future, this repository will include:
-* **Bug Reports:** Formally documented issues found during manual exploratory testing of the UI.
-* **Test Cases:** Planned test scenarios focusing on edge cases, particularly for the upcoming AI integration.
+---
 
-## 🚀 Roadmap
-- [x] Basic UI and navigation setup.
-- [x] Backend server initialization (Express).
-- [ ] **AI Photo Analysis:** Integration with AI to automatically recognize meals from photos and calculate macros (calories, proteins, fats, carbs).
-- [ ] Comprehensive QA test documentation.
+## 🎯 QA & Testing Showcase
+
+As a QA Engineer, I actively treated the NutriMinar backend API as a product under test. All QA artifacts are documented using industry-standard templates based on ISTQB principles:
+
+* 📋 **[Test Cases Document (docs/TEST-CASES.md)](./docs/TEST-CASES.md):** 
+  Comprehensive test scenarios covering functional positive testing (Happy Path), boundary value analysis (BVA), unauthorized request handling, invalid content-type payloads, and AI-unmatched product edge cases (`TC-001` through `TC-005`).
+
+* 🐛 **[Defect Reports (GitHub Issues)](../../issues):** 
+  5 formally documented bug reports created during dynamic API testing using cURL and zsh terminal scripts (`BUG-001` through `BUG-005`). Each report includes Environment, Preconditions, Steps to Reproduce, Expected vs. Actual Results, and Severity Assessment.
+
+---
+
+## 🚀 Project Roadmap & QA Status
+
+- [x] Basic UI and navigation setup (React Native / Expo).
+- [x] Backend Express server initialization & Zod request validation.
+- [x] OpenAI Vision API integration for meal & ingredient recognition.
+- [x] **Comprehensive QA Test Plan & Scenario Design (`TC-001` - `TC-005`).**
+- [x] **Dynamic API Testing & Defect Logging (`BUG-001` - `BUG-005`).**
+- [ ] Automated API integration tests suite setup.
